@@ -51,3 +51,14 @@ You get output like so:
 
 Eventually I'll support filtering on scope, as well as checking whether source
 files exist before adding them.
+
+## TODO
+
+ * Generate `kind="src"` entries for source directories.
+ * Generate `kind="output"` entries for target directories.
+ * Generate boilerplate `kind="con"` entries.
+ * Check for existence of source jar before adding `sourcepath` attribute.
+ * Add `exported="true"` for non-optional dependencies.
+ * Support in-place update of existing .classpath file, preserving existing elements.
+ * If we see a dependent project with same name as a dependency (just artifact), omit that dependency.
+ * Contemplate how we might avoid repeating dependencies exported by dependent (Eclipse) projects.
